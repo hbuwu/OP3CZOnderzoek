@@ -1,0 +1,181 @@
+body {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 15%), url("../src/background3rotated.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.body2 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%), url("../src/BackgroundPages.png");
+    background-repeat: no-repeat;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%), url("../src/TopBar.png");
+}
+
+h2 {
+    position: relative;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.1) 100%), url("../src/TopBar.png");
+    color: white;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem auto;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 2rem auto;
+}
+
+.container {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.container div {
+    display: flex;
+    border-radius: 100%;
+    background-image: url("../src/button.png");
+    background-size: cover;
+    width: 60vw;
+    height: 60vw;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: auto 0;
+    text-align: center;
+    align-items: center;
+    transition-duration: 0.1s;
+}
+
+.container div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+}
+
+.container div p {
+    padding: 0 30%;
+}
+
+.text {
+    position: relative;
+    height: 100%;
+}
+
+.textgrid {
+    width: 90vw;
+    margin: 3rem auto;
+    position: relative;
+}
+
+.textgrid p {
+    margin: 2rem auto;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.textgrid ul {
+    padding: 0 2rem;
+    margin: 2rem auto;
+    text-align: justify;
+    line-height: 2rem;
+    list-style: square outside;
+}
+
+.textgrid li {
+    margin: 1rem auto;
+}
+
+.goback {
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 100%;
+    background-image: url(../src/back.png);
+    background-size: contain;
+    width: 35vw;
+    height: 35vw;
+    margin: 1.5rem auto;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    transition-duration: 0.1s;
+}
+
+.goback:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotate(-180deg);
+    transition-duration: 0.3s;
+}
+
+
+
+@media (min-width: 700px) {
+    body {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 15%), url("../src/background3rotated.png");
+        font-size: 1.6rem;
+    }
+    h1 {
+        font-weight: bolder;
+    }
+    h3 {
+        margin: 0 auto;
+    }
+    h4 {
+        margin: 0 auto;
+    }
+    .container {
+        grid-template-columns: repeat(2,1fr);
+        width: 70vw;
+        margin: 5rem auto 0;
+    }
+
+    .container div {
+        width: 21vw;
+        height: 21vw;
+    }
+
+    .container div p {
+        font-size: 2rem;
+    }
+
+    .textgrid {
+        width: 41vw;
+        margin: 5rem auto;
+    }
+
+    .textgrid p {
+        line-height: 2.5rem;
+        margin: 0 auto;
+    }
+    .textgrid ul {
+        margin: 0 auto;
+    }
+
+    .goback {
+        width: 8vw;
+        height: 8vw;
+    }
+}
